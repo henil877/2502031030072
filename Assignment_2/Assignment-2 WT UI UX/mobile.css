@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3f2e2e;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 260px;
+}
+
+.search-box input {
+  border: none;
+  padding: 8px 10px;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.search-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-right a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.page-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+  padding: 16px 24px 30px;
+  background-color: #f1f1f1;
+}
+
+/* Filters sidebar */
+.filters {
+  background-color: #ffffff;
+  padding: 16px 14px;
+  border-radius: 4px;
+}
+
+.filters h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.filter-block {
+  margin-top: 14px;
+}
+
+.filter-block h3 {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.filter-block label {
+  display: block;
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+/* Mobile list */
+.mobile-list {
+  background-color: #ffffff;
+  padding: 16px;
+}
+
+.mobile-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.mobile-card:last-child {
+  border-bottom: none;
+}
+
+.mobile-img {
+  width: 130px;
+  height: 50px;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+
+img{
+    height: 150px;
+}
+
+
+
+.mobile-info h2 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.mobile-info ul {
+  list-style: disc;
+  margin-left: 18px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Simple responsiveness */
+@media (max-width: 900px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+  .filters {
+    order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-card {
+    grid-template-columns: 1fr;
+  }
+  .nav-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

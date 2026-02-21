@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar {
+    background-color: #3F2E2E;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.main-content {
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banners-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.banner-left {
+    background-color: #66B2FF;
+    border-radius: 8px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.banner-heading {
+    color: #333333;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    max-width: 60%;
+}
+
+.shop-now-btn {
+    background-color: #FF9966;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shop-now-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.shop-now-btn:active {
+    transform: translateY(0);
+}
+
+.banner-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+img{
+    height: 200px;
+}
+.banner-right {
+    background-color: #8E847C;
+    border-radius: 8px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    position: relative;
+}
+
+.clothes-heading {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.clothes-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-arrow {
+    color: #E0E0E0;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+}
+
+.clothes-image {
+    background-color: #F5F5DC;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cloth-img{
+   display: flex;
+   justify-content: center;
+}
+
+.clothes-rack {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+
+.brands-heading {
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.brand-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.brand-item:hover {
+    transform: translateY(-5px);
+}
+
+.brand-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iphone-home{
+    height: 110px;
+}
+
+.sony-img{
+    height: 110px;
+}
+
+.nike-home{
+    height: 110px;
+}
+
+.adidas-home{
+    height: 100px;
+}
+
+.samsung-home{
+     height: 100px;
+}
+
+.rayban-home{
+     height: 80px;
+}
+
+.watch-home{
+    height: 100px;
+}
+
+.brand-name {
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .brands-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .banners-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .brands-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+    }
+}

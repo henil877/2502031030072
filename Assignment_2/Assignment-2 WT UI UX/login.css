@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #2a2a2a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-frame {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 600px;
+    background-color: #2a2a2a;
+    border: 2px solid #1a1a1a;
+}
+
+.page-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #a0a0a0;
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 10;
+}
+
+.content-area {
+    background-color: #ffffff;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.login-container {
+    background-color: #3F3939;
+    border-radius: 18px;
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.3);
+}
+
+.login-title {
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.title-line {
+    width: 90%;
+    height: 1px;
+    background-color: #5a5a5a;
+    margin: 0 auto 30px auto;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    width: 100%;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #888;
+}
+
+.form-input:focus {
+    background-color: #f0f0f0;
+}
+
+.submit-button {
+    background-color: #8A8A8A;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    width: 60%;
+    margin: 10px auto 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #9a9a9a;
+}
+
+.submit-button:active {
+    background-color: #7a7a7a;
+}

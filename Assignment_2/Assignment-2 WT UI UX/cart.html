@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart page - Flipkart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">Flipkart</span>
+      <div class="search-box">
+        <input type="text" placeholder="Search Here..." />
+        <button class="search-btn" aria-label="Search">&#128269;</button>
+      </div>
+    </div>
+    <nav class="nav-right">
+      <a href="#">More</a>
+      <a href="#">Account</a>
+    </nav>
+  </header>
+
+  <main class="page-layout">
+    <section class="cart-items">
+      <article class="cart-card">
+        <div class="cart-card-img ">
+            <img src="code img/cart1.jpg" class="cart1">
+        </div>
+        <div class="cart-card-body">
+          <h2>DEYVUE Oval Sunglasses</h2>
+          <p class="meta">For Men &amp; Women, Black</p>
+          <p class="seller">Seller: HALFBLACK</p>
+          <p class="price">₹182</p>
+          <div class="quantity">
+            <button type="button" class="qty-btn" aria-label="Decrease">−</button>
+            <input type="number" value="1" min="1" max="99" readonly />
+            <button type="button" class="qty-btn" aria-label="Increase">+</button>
+          </div>
+          <div class="actions">
+            <a href="#">SAVE FOR LATER</a>
+            <a href="#">REMOVE</a>
+          </div>
+          <p class="delivery">Delivery by Sat Jan 31</p>
+        </div>
+      </article>
+
+      <article class="cart-card">
+        <div class="cart-card-img">
+            <img src="code img/cart2.jpg" class="cart2">
+        </div>
+        <div class="cart-card-body">
+          <h2>Jai Textiles Men Checkered Casual Brown Shirt</h2>
+          <p class="meta">Size: XXL</p>
+          <p class="seller">Seller: JaiTextiles</p>
+          <p class="price">₹350</p>
+          <div class="quantity">
+            <button type="button" class="qty-btn" aria-label="Decrease">−</button>
+            <input type="number" value="1" min="1" max="99" readonly />
+            <button type="button" class="qty-btn" aria-label="Increase">+</button>
+          </div>
+          <div class="actions">
+            <a href="#">SAVE FOR LATER</a>
+            <a href="#">REMOVE</a>
+          </div>
+          <p class="delivery">Delivery in 2 days. Mon</p>
+        </div>
+      </article>
+
+      <div class="place-order-wrap">
+        <button type="button" class="place-order-btn">Place Order</button>
+      </div>
+    </section>
+
+    <aside class="price-details">
+      <h2>Price Details</h2>
+      <div class="price-row">
+        <span>MRP</span>
+        <span>₹3,058</span>
+      </div>
+      <div class="price-row">
+        <span>Platform Fee</span>
+        <span>₹7</span>
+      </div>
+      <hr />
+      <div class="price-row">
+        <span>Discount on MRP</span>
+        <span class="discount">−₹2,506</span>
+      </div>
+      <div class="price-row">
+        <span>Coupons Applied (1)</span>
+        <span class="discount">−₹20</span>
+      </div>
+      <hr />
+      <div class="price-row total">
+        <span>Total Amount</span>
+        <span>₹539</span>
+      </div>
+      <div class="savings-bar">
+        You will save ₹2,519 on this order
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
